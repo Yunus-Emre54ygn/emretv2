@@ -7,7 +7,7 @@ Bu proje, **PWA (Progressive Web App)** mantığına uygun şekilde geliştirilm
 
 ## 🚀 Canlı Demo
 
-🔗 https://KULLANICIADIN.github.io/emretv/
+🔗 [https://yunus-emre54ygn.github.io/emretv/](https://yunus-emre54ygn.github.io/emretv2/)
 
 ---
 
