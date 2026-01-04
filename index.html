@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EmreTv</title>
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#f5b67f">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" type="image/png" href="./assets/icons/icon-192.png">
+
+</head>
+<body>
+
+ <header>
+  <button id="toggleFavs">⭐ Favoriler</button>
+
+
+  <h1>
+    <span class="logo-emoji">🍑</span>
+    <span class="logo-text">EmreTv</span>
+  </h1>
+
+  <p id="statusMessage"></p>
+
+  <input type="text" id="searchInput" placeholder="Dizi ara..." />
+
+  <!-- OFFLINE UYARI TAM OLARAK BURAYA -->
+  <p id="offlineWarning" style="display:none; color:red; font-weight:bold;">
+    🔌 İnternet yok. Offline moddasın.
+  </p>
+</header>
+
+
+  <main id="showList">
+    
+  </main>
+
+  
+  <div id="detailModal" class="modal hidden">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <div id="modalBody"></div>
+  </div>
+</div>
+<script src="./js/app.js" defer></script>
+<script src="./js/app.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("service-worker.js")
+      .then(() => console.log("✅ Service Worker kayıtlı"))
+      .catch(err => console.error("❌ SW hata:", err));
+  });
+}
+</script>
+<script>
+if ("serviceWorker" in navigator) {
+ navigator.serviceWorker.register("./service-worker.js");
+}
+</script>
+
+
+
+
+</body>
+</html>
